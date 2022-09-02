@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <title>SRI LANAKA TRAVEL GUIDER </title>
+     <link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="style1.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub5-header">
+    <nav>
+       <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+           <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="TOURIST PLACES_INFORMATION.html">TOURIST PLACES'INFORMATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="TO-DO-LIST.html">TO-DO LIST</a></li>          
+           </ul>
+
+       </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>TO-DO LIST</h1>
+</section>
+<div class="wrapper">
+    <header>List Of Places To Visit</header>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new Place">
+      <button><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todoList">
+      <!-- data are comes from local storage -->
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"></span> pending Places</span>
+      <button>Clear All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+<!-------Footer-------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Change Your Life Travel With Us</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by W.M.Chanaka</p>
+    </section>
+	
+<!------Javascript for toggle menu--------->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu (){
+     navLinks.style.right = "0";
+    }
+    function hideMenu(){
+     navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
